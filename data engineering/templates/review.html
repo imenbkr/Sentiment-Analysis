@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Review</h1>
+
+    <form action="{{ url_for('review') }}" method="POST">
+        <label for="review">Write a review:</label><br>
+        <textarea id="review" name="Reviews" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="C:\Users\IMEN\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\PFA\data engineering\Flask App\static\app.js"></script>
+</body>
+
+</html>

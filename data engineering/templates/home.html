@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="C:\Users\IMEN\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\PFA\data engineering\Flask App\static\styles.css">
+<script src="C:\Users\IMEN\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\PFA\data engineering\Flask App\static\app.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .option-button {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Web Interface</h1>
+        <p>Please select an option:</p>
+        <form action="/predict" method="POST">
+            <button class="option-button" type="submit" name="option" value="review">Give a Review</button>
+            <button class="option-button" type="submit" name="option" value="recommendation">Get Product Recommendation</button>
+        </form>
+    </div>
+</body>
+</html>
